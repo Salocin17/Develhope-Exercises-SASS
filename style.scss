@@ -1,0 +1,39 @@
+@import "function";
+@import "variables";
+
+div {
+    border: rem(1) solid $red;
+    height: 100%;
+} h1 {
+     color: $green;
+     text-decoration: underline;
+     text-align: center;
+}
+
+section {
+    display: flex;
+    width: 90%;
+    margin: rem(15) auto;
+    justify-content: center;
+}
+
+@mixin article-card ($color, $border , $font){
+    color: $color; 
+    border: rem(1) solid $border;
+    font-size: $font;
+    padding: 2rem;
+    text-align: center;
+}
+
+.article_blue {
+    @include article-card($blue, $green, 1rem);
+}
+
+.article_red {
+    @include article-card($red, $green, 1rem);
+}
+
+.article_big {
+    @include article-card($green, $blue ,rem(24));
+    width: 100%;
+}
