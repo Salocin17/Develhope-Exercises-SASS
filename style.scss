@@ -1,0 +1,37 @@
+div {
+    border: 1px solid red;
+    height: 100%;
+} h1 {
+     color: green;
+     text-decoration: underline;
+     text-align: center;
+}
+
+section {
+    display: flex;
+    width: 90%;
+    margin: 15px auto;
+    justify-content: center;
+}
+
+@mixin article-card ($color, $border , $font){
+    color: $color; 
+    border: 1px solid $border;
+    font-size: $font;
+    padding: 2rem;
+    text-align: center;
+}
+
+.article_blue {
+    @include article-card(blue, green, 1rem);
+}
+
+.article_red {
+    @include article-card(red, green, 1rem);
+}
+
+.article_big {
+    @include article-card(green, blue ,24px);
+    width: 100%;
+}
+
