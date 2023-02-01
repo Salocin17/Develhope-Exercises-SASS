@@ -1,0 +1,29 @@
+div {
+  border: 1px solid red;
+  height: 250px; }
+
+h1 {
+  text-decoration: underline;
+  color: green;
+  text-align: center; }
+
+section {
+  display: flex;
+  width: 90%;
+  margin: 0 auto; }
+
+.article_blue {
+  border: 1px solid green; }
+
+.text_blue {
+  padding: 2rem;
+  color: blue; }
+
+.article_red {
+  border: 1px solid green; }
+
+.text_red {
+  padding: 2rem;
+  color: red; }
+
+/*# sourceMappingURL=style.css.map */

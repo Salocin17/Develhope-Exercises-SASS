@@ -1,0 +1,30 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+div {
+    border: 1px solid $color-primary;
+    height: 250px;
+} h1 {
+    text-decoration: underline;
+    color: $color-tertiary;
+    text-align: center;
+} section {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}  
+
+.article_blue {
+    border: 1px solid $color-tertiary;
+} .text_blue {
+    padding: 2rem;
+    color: $color-secondary;
+}
+
+.article_red {
+    border: 1px solid $color-tertiary;
+} .text_red {
+    padding: 2rem;
+    color: $color-primary;
+}
