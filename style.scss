@@ -1,13 +1,19 @@
 @import "function";
 @import "variables";
 
-div {
+.container {
     border: rem(1) solid $red;
     height: 100%;
-} h1 {
+ & .main_title {
      color: $green;
      text-decoration: underline;
      text-align: center;
+} }
+
+.subtitle {
+    @extend .main_title;
+    padding: 1rem;
+    border: rem(1) solid $red;
 }
 
 section {

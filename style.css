@@ -1,11 +1,14 @@
-div {
+.container {
   border: 0.0625rem solid red;
   height: 100%; }
+  .container .main_title, .container .subtitle {
+    color: green;
+    text-decoration: underline;
+    text-align: center; }
 
-h1 {
-  color: green;
-  text-decoration: underline;
-  text-align: center; }
+.subtitle {
+  padding: 1rem;
+  border: 0.0625rem solid red; }
 
 section {
   display: flex;
