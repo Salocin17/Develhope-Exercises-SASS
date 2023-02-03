@@ -43,3 +43,53 @@ section {
     @include article-card($green, $blue ,rem(24));
     width: 100%;
 }
+
+.squares {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    & div {
+        width: rem(45);
+        height: rem(45);
+        border: rem(1) solid $red;
+    }
+} 
+
+
+    @for $i from 1 through 20 {
+         .squares > div:nth-child(#{$i}){
+            background: darken(white, 5*$i);
+            color: lighten(#000000, 5*$i);
+            @if $i == 10 {
+                background-color: blue;
+                color: red;
+            }
+        }
+    } 
+
+    @for $var from 1 through 20 {
+        .fs-#{$var}rem {
+            @if $var == 1 {
+                font-size: 1rem;
+            }
+            @if $var == 2 {
+                 font-size: 2rem;
+             }
+            @if $var == 3 {
+                 font-size: 3rem;
+            }
+                       
+        }
+    }
+
+
+        
+
+    
+    
+
+   
+    
+    
+    
+
